@@ -4,17 +4,20 @@ public class Student {
     private String name;
     private float mean;
     private int year;
+    private Specialization specialization;
 
-    public Student(String name, float mean, int year) {
+    public Student(String name, float mean, int year, Specialization specialization) {
         this.name = name;
         this.mean = mean;
         this.year = year;
+        this.specialization = specialization;
     }
 
     public Student() {
         this.name = "";
         this.mean = 0;
         this.year = 0;
+        this.specialization = new Specialization();
     }
 
     public String getName() {
@@ -39,5 +42,13 @@ public class Student {
 
     public void setYear(int year) {
         this.year = year;
+    }
+
+    public Specialization getSpecialization() {
+        return specialization;
+    }
+
+    public void setSpecialization(Specialization specialization) {
+        this.specialization = specialization;
     }
 }

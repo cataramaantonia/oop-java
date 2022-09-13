@@ -5,9 +5,9 @@ import java.util.Date;
 public class Employee {
     protected String name;
     protected int salary;
-    protected Date hireDate;
+    protected String hireDate;
 
-    public Employee(String name, int salary, Date hireDate) {
+    public Employee(String name, int salary, String hireDate) {
         this.name = name;
         this.salary = salary;
         this.hireDate = hireDate;
@@ -16,7 +16,7 @@ public class Employee {
     public Employee() {
         this.name = "";
         this.salary = 0;
-        this.hireDate = new Date();
+        this.hireDate = "";
     }
 
     public String getName() {
@@ -35,11 +35,11 @@ public class Employee {
         this.salary = salary;
     }
 
-    public Date getHireDate() {
+    public String getHireDate() {
         return hireDate;
     }
 
-    public void setHireDate(Date hireDate) {
+    public void setHireDate(String hireDate) {
         this.hireDate = hireDate;
     }
 }

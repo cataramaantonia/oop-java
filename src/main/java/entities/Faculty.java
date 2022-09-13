@@ -3,8 +3,9 @@ package entities;
 public class Faculty {
     private String name;
     private Location location;
+    private String university;
 
-    public Faculty(String name, Location location, University university) {
+    public Faculty(String name, Location location, String university) {
         this.name = name;
         this.location = location;
         this.university = university;
@@ -13,7 +14,7 @@ public class Faculty {
     public Faculty() {
         this.name = "";
         this.location = new Location();
-        this.university = new University();
+        this.university = "";
     }
 
     public String getName() {
@@ -32,13 +33,11 @@ public class Faculty {
         this.location = location;
     }
 
-    public University getUniversity() {
+    public String getUniversity() {
         return university;
     }
 
-    public void setUniversity(University university) {
+    public void setUniversity(String university) {
         this.university = university;
     }
-
-    private University university;
 }
